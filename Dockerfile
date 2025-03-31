@@ -15,3 +15,4 @@ FROM adoptopenjdk/openjdk11:latest
 COPY --from=build ${JAR_FILE} app.jar
 EXPOSE 6379
 ENTRYPOINT ["java","-jar","app.jar"]
+
